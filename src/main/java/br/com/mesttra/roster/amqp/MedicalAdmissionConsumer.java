@@ -6,10 +6,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-@Component
+/*@Component*/
 public class MedicalAdmissionConsumer {
 
-    PlayerService playerService;
+/*    PlayerService playerService;
 
     public MedicalAdmissionConsumer(PlayerService playerService) {
         this.playerService = playerService;
@@ -19,6 +19,6 @@ public class MedicalAdmissionConsumer {
     public void consumer(PlayerMessage message) {
         Logger logger = LoggerFactory.getLogger(MedicalAdmissionConsumer.class);
         playerService.makePlayerUnavailable(message.getId());
-    }
+    }*/
 
 }
