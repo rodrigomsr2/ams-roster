@@ -1,10 +1,10 @@
 package br.com.mesttra.roster.entity;
 
 import br.com.mesttra.roster.enums.Position;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -12,6 +12,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class Player {
 
     @Id
