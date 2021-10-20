@@ -6,10 +6,10 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "montlyExpense", url="http://localhost:8083/")
+@FeignClient(name = "expenses", url="http://localhost:8083/")
 public interface ExpenseClient {
 
-	@RequestMapping("/montlyExpense")
+	@RequestMapping("/expenses")
     DespesaDTO sendMail(@RequestBody DespesaDTO despesaDTO);
 
 }
